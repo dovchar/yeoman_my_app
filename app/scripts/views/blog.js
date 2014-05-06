@@ -13,7 +13,7 @@ define([
 
         tagName: 'div',
 
-        id: 'yield',
+        el: '#yield',
 
         className: '',
 
@@ -26,9 +26,9 @@ define([
 
         render: function () {
             // this.$el.html(this.template(this.model.toJSON()));
-            console.log(this.$el)
-            console.log(this.template())
-            this.$el.html(this.template());
+            console.log(this.$el);
+            console.log(this.template());
+            $(this.el).append(this.template());
 
             return this;
         }

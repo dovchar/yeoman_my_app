@@ -13,7 +13,7 @@ define([
         },
 
         runBlogView: function () {
-        	var view = new BlogView();
+        	new BlogView();
         }
 
     });

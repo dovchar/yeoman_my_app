@@ -20,6 +20,6 @@ require([
     'backbone',
     'routes/blog'
 ], function (Backbone, BlogRouter) {
-    var router = new BlogRouter();
+    new BlogRouter();
     Backbone.history.start();
 });
